@@ -1,10 +1,10 @@
-import {React} from 'react'
+import React from 'react'
 import withLayout from './withLayout'
 
-function Home() {
+function About() {
   return (
     <div>
-    <h1>Welcome To My Homepage</h1>
+    <h1>About Me</h1>
     
     <div>
     <p>Good News Agency carries positive and constructive 
@@ -22,8 +22,9 @@ function Home() {
 
 
     </div>
+    
     </div>
   )
 }
 
-export default withLayout(Home)
+export default withLayout(About)

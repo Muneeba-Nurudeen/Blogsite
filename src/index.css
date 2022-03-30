@@ -1,44 +1,41 @@
-.layout{
+@import url(reset.css);
+
+
+.layout {
   height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main-component{
+.main-component {
   flex: 1;
   max-width: 700px;
   margin: auto;
 }
-.appbar{
+.appbar {
   background-color: crimson;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
 }
-.appbar span{
+.appbar span {
   font-size: 25px;
   font-weight: 700;
   color: whitesmoke;
 }
 
-.nav-link >a{
+.nav-link > a {
   margin: 10px;
   text-decoration: none;
   color: white;
 }
-.appbar >a:hover{
-  text-decoration:underline;
+.appbar > a:hover {
+  text-decoration: underline;
 }
-footer{
+footer {
   background-color: crimson;
   padding: 10px;
   text-align: center;
   color: whitesmoke;
 }
-
-
-
-
-
-
