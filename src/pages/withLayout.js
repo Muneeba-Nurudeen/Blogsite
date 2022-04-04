@@ -45,9 +45,13 @@ useEffect(() => {
         <main className='main-component'>
        <Component/>
         </main>
+
+
+
+        
         <footer>&copy; 2022 PreMest</footer>
         </div>
-    );
+    )
 }
 return Layout
 }

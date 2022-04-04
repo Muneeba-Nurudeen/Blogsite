@@ -16,7 +16,7 @@ useEffect(()=>{
     const handleClick =(id)=>{
         const post = posts[id-1]
         navigate(`/blog/${posts.slug}` , {state: {post}})
-    }
+    } 
 return(
     <div>
     <div>
@@ -34,8 +34,7 @@ onClick={()=>handleClick(post.id)}
 style={{alignSelf:"end"}}>Read More</button>
 
 </div>
-
-    </div>
+ </div>
 ))}
     </div>
     

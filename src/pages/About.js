@@ -1,28 +1,36 @@
 import React from 'react'
 import withLayout from './withLayout'
+import { useContext } from 'react'
+import { AboutContext } from '../context/AboutContext'
 
 function About() {
+  const {about} = useContext(AboutContext)
   return (
-    <div>
-    <h1>About Me</h1>
+    <div style={{maxWidth:"700px", margin:"auto", padding:"20px 0"}}>
+    <h2>About Me</h2>
     
-    <div>
-    <p>Good News Agency carries positive and constructive 
-    news from all over the world relating to voluntary work,
-     the work of the United Nations, non-governmental organizations
-      and institutions engaged in improving the quality of life – news
-       that doesn’t “burn out” in the space of a day.</p>
-    
-
-        <p>Good News Agency carries positive and constructive 
-    news from all over the world relating to voluntary work,
-     the work of the United Nations, non-governmental organizations
-      and institutions engaged in improving the quality of life – news
-       that doesn’t “burn out” in the space of a day.</p>
+   <div style={{marginTop: "10px"}}>
+   <h3>Name</h3>
+   <p>{about.Name}</p>
+   </div>
 
 
-    </div>
-    
+   <div style={{marginTop: "10px"}}>
+   <h3>Bio</h3>
+   <p>{about.Bio}</p>
+   </div>
+
+
+   <div style={{marginTop: "10px"}}>
+   <h3>Hobbies</h3>
+   {about.Hobbies.map((hobby)=>(
+<p key={hobby} style={{display:"inline-block", marginRight:"10px"}}>
+{hobby}
+</p>
+   ))}
+   </div>
+
+
     </div>
   )
 }
